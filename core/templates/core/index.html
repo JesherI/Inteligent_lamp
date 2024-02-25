@@ -1,123 +1,131 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-  <section id="inicio">
-    <div class="titles">
+<section id="inicio">
+  <!-- Contenido de la sección Inicio -->
+  <div class="titles">
       <h2 class="intelligent">Intelligent</h2>
       <h2 class="lamp">Lamp</h2>
-    </div>
-  </section>
+  </div>
+  <!-- Puedes agregar más contenido aquí -->
+</section>
 
-  <section id="función">
-    <div class="funcion-content">
+<section id="función">
+  <div class="funcion-content">
       <div class="funcion-left">
-        <h2>¿Por qué Intelligent Lamp?</h2>
-        <p>Intelligent Lamp ofrece una solución innovadora y eficiente para satisfacer tus necesidades de iluminación.</p>
+          <h2>¿Por qué Intelligent Lamp?</h2>
+          <p>Intelligent Lamp ofrece una solución innovadora y eficiente para satisfacer tus necesidades de iluminación.</p>
       </div>
       <div class="funcion-right">
-        <h2>Funciones</h2>
-        <div class="icon-container">
-          <img src="images/clima.gif" alt="Icono de Clima" />
-          <p>Información meteorológica en tiempo real</p>
-        </div>
-        <div class="icon-container">
-          <img src="images/lamp.gif" alt="Icono de Día" />
-          <p>Controla la iluminación durante el día</p>
-        </div>
-        <div class="icon-container">
-          <img src="images/sleep.gif" alt="Icono de Luz" />
-          <p>Ayuda a tener una buena intencidad luminica para descansar</p>
-        </div>
-        <div class="icon-container">
-          <img src="images/reloj.gif" alt="Icono de Alarma" />
-          <p>Programa horarios de alarma</p>
-        </div>
-        <div class="icon-container">
-          <img src="images/encendido.gif" alt="Icono de Lampara" />
-          <p>Programa horarios de encendido y apagado</p>
-        </div>
-        <div class="icon-container">
-          <img src="images/alarma.gif" alt="Icono de Notificaciones" />
-          <p>Envía recomendaciones de acuerdo al clima</p>
-        </div>
+          <h2>Funciones</h2>
+          <div class="icon-container">
+              <img src="{% static 'img/clima.gif' %}" alt="Icono de Clima">
+              <p>Información meteorológica en tiempo real</p>
+          </div>
+          <div class="icon-container">
+              <img src="{% static 'img/lamp.gif' %}" alt="Icono de Día">
+              <p>Controla la iluminación durante el día</p>
+          </div>
+          <div class="icon-container">
+              <img src="{% static 'img/sleep.gif' %}" alt="Icono de Luz">
+              <p>Ayuda a tener una buena intencidad luminica para descansar</p>
+          </div>
+          <div class="icon-container">
+              <img src="{% static 'img/reloj.gif' %}" alt="Icono de Alarma">
+              <p>Programa horarios de alarma</p>
+          </div>
+          <div class="icon-container">
+              <img src="{% static 'img/encendido.gif' %}" alt="Icono de Lampara">
+              <p>Programa horarios de encendido y apagado</p>
+          </div>
+          <div class="icon-container">
+              <img src="{% static 'img/alarma.gif' %}" alt="Icono de Notificaciones">
+              <p>Envía recomendaciones de acuerdo al clima</p>
+          </div>
+      
       </div>
-    </div>
-  </section>
+  </div>
+  
+</section>
 
-  <section id="clima" class="clima">
-    <div class="container">
+
+
+<section id="clima" class="clima">
+  <div class="container">
       <div class="weather-side">
-        <div class="weather-gradient"></div>
-        <div class="date-container">
-          <h2 class="date-dayname">Hoy</h2><span class="date-day">15 Jan 2019</span><i class="location-icon" data-feather="map-pin"></i><span class="location">Paris, FR</span>
-        </div>
-        <div class="weather-container">
-          <i class="weather-icon" data-feather="sun"></i>
-          <h1 class="weather-temp"></h1>
-          <h3 class="weather-desc">Sunny</h3>
-        </div>
+      <div class="weather-gradient"></div>
+         <div class="date-container">
+              <h2 class="date-dayname">Hoy</h2><span class="date-day">15 Jan 2019</span><i
+                  class="location-icon" data-feather="map-pin"></i><span class="location">Paris, FR</span>
+          </div>
+          <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
+              <h1 class="weather-temp"></h1>
+              <h3 class="weather-desc">Sunny</h3>
+          </div>
       </div>
       <div class="info-side">
-        <div class="today-info-container">
-          <div class="today-info">
-            <div class="precipitation">
-              <span class="title">PRECIPITATION</span><span class="value">0 %</span>
-              <div class="clear"></div>
-            </div>
-            <div class="humidity">
-              <span class="title">HUMIDITY</span><span class="value">34 %</span>
-              <div class="clear"></div>
-            </div>
-            <div class="wind">
-              <span class="title">WIND</span><span class="value">0 km/h</span>
-              <div class="clear"></div>
-            </div>
+          <div class="today-info-container">
+              <div class="today-info">
+                  <div class="precipitation"> <span class="title">PRECIPITATION</span><span class="value">0
+                          %</span>
+                      <div class="clear"></div>
+                  </div>
+                  <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">34 %</span>
+                      <div class="clear"></div>
+                  </div>
+                  <div class="wind"> <span class="title">WIND</span><span class="value">0 km/h</span>
+                      <div class="clear"></div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="week-container">
-          <ul class="week-list">
-            <li class="active">
-              <i class="day-icon" data-feather="sun"></i><span class="day-name">Hoy</span><span class="day-temp"></span>
-            </li>
-            <li>
-              <i class="day-icon" data-feather="cloud"></i><span class="day-name">Wed</span><span class="day-temp">21°C</span>
-            </li>
-            <li>
-              <i class="day-icon" data-feather="cloud-snow"></i><span class="day-name">Thu</span><span class="day-temp">08°C</span>
-            </li>
-            <li>
-              <i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Fry</span><span class="day-temp">19°C</span>
-            </li>
-            <div class="clear"></div>
-          </ul>
-        </div>
+          <div class="week-container">
+              <ul class="week-list">
+                  <li class="active"><i class="day-icon" data-feather="sun"></i><span
+                          class="day-name">Hoy</span><span class="day-temp"></span></li>
+                  <li><i class="day-icon" data-feather="cloud"></i><span class="day-name">Wed</span><span
+                          class="day-temp">21°C</span></li>
+                  <li><i class="day-icon" data-feather="cloud-snow"></i><span class="day-name">Thu</span><span
+                          class="day-temp">08°C</span></li>
+                  <li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Fry</span><span
+                          class="day-temp">19°C</span></li>
+                  <div class="clear"></div>
+              </ul>
+          </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="instalar">
-    <h2>Instalar</h2>
-    <p>Aquí puedes agregar información sobre cómo instalar tu producto.</p>
-  </section>
+<section id="instalar">
+  <div><p><br>Paso 1</p></div>
+  <div>
+      <h2>Escanea el código QR con la cámara de tu
+      teléfono para abrir <br>la aplicación </h2>
+  </div>
+  <div><h3>Paso 2</h3></div>
+  <div class="img-qr">
+      <img src="{% static 'img/qr-code-scan.png' %}" alt="Icono qr">
+  </div>
+  
+</section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <div class="contacto-container">
+<section id="contacto">
+  <h2>Contacto</h2>
+  <div class="contacto-container">
       <div class="contacto-info">
-        <img src="images/locacion.gif" alt="Icono de Locación" />
-        <h3>Locación</h3>
-        <p>1234 Calle Principal, Ciudad</p> <!-- Cambia la información según tus necesidades -->
+          <img src="{% static 'img/locacion.gif' %}" alt="Icono de Locación">
+          <h3>Locación</h3>
+          <p>1234 Calle Principal, Ciudad</p> <!-- Cambia la información según tus necesidades -->
       </div>
       <div class="contacto-info">
-        <img src="images/email.gif" alt="Icono de Email" />
-        <h3>Email</h3>
-        <p>correo@example.com</p>
+          <img src="{% static 'img/email.gif' %}" alt="Icono de Email">
+          <h3>Email</h3>
+          <p>correo@example.com</p>
       </div>
       <div class="contacto-info">
-        <img src="images/telefono.gif" alt="Icono de Teléfono" />
-        <h3>Teléfono</h3>
-        <p>(123) 456-7890</p>
+          <img src="{% static 'img/telefono.gif' %}" alt="Icono de Teléfono">
+          <h3>Teléfono</h3>
+          <p>(123) 456-7890</p>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
 {% endblock %}

@@ -1,0 +1,75 @@
+#función {
+    color: #8b5522;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; 
+}
+
+.funcion-content {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 20px; 
+}
+.funcion-left p {
+    font-family: 'The Seasons Light', 'Cormorant', serif; 
+    font-size: 20px; 
+    color: #72490b; 
+    margin-top: 10px; 
+}
+.funcion-left,
+.funcion-right {
+    flex: 10;
+}
+
+.funcion-right {
+    text-align: left;
+}
+
+#función::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fondo6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#función > * {
+    position: relative; 
+    z-index: 20;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon-container img {
+    width: 50px; 
+    margin-right: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.icon-container img:hover {
+    transform: scale(2.5); 
+}
+
+.icon-container p {
+    font-family: 'Cormorant Garamond', serif; 
+    margin-left: 10px; 
+    font-size: 20px;
+    color: #492208; 
+}
+
+
+#función h2 {
+    font-family: 'The Seasons Light', 'Cormorant', serif; 
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #6b460f; 
+}

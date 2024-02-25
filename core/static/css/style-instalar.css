@@ -1,0 +1,81 @@
+#instalar {
+    color: #8b5522;
+    position: relative;
+    overflow: hidden;
+    min-height: 135vh;
+}
+
+.instalar-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 90px;
+}
+
+.instalar-left p {
+    font-family: 'The Seasons Light', 'Cormorant', serif;
+    font-size: 30px;
+    color: #72490b;
+    margin-top: 10px;
+}
+
+.instalar-left,
+.instalar-right {
+    flex: 10;
+}
+
+.instalar-right {
+    text-align: left;
+}
+
+#instalar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/instalar.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#instalar p {
+    font-size: 50px; 
+    color: #6b460f86; /* Color del texto */
+    position: absolute;
+    height: 200px;
+    bottom: 10px; /* Ajusta la posición desde la parte inferior */
+    left: 5%;
+}
+
+#instalar h2 {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 45px; /* Tamaño de fuente para h2 */
+    color: #6b460f86; /* Color del texto */
+    position: absolute;
+    height: 20px;
+    left: 50%; /* Ajusta la posición desde el lado izquierdo */
+    font-weight: normal; 
+}
+
+#instalar h3 {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 50px; /* Tamaño de fuente para h2 */
+    color: #6b460f86; /* Color del texto */
+    position: absolute;
+    height: 30px;
+    left: 51%; /* Ajusta la posición desde el lado izquierdo */
+    font-weight: normal; 
+    bottom: 125px; /* Ajusta la posición desde la parte inferior */
+}
+.img-qr img {
+    width: 350px; /* Ancho de la imagen */
+    height: 350px; /* Alto de la imagen */
+    position: absolute;
+    bottom: 230px; /* Ajusta la posición desde la parte inferior */
+    left: 750px; /* Ajusta la posición desde el lado izquierdo */
+    z-index: 2; /* Ajusta el orden de apilamiento */
+}
+

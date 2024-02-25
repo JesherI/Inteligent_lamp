@@ -68,7 +68,7 @@ nav ul li a:hover {
 #inicio {
     margin-top: 80px;
     text-align: center;
-    background-image: url("images/lamp1.png");
+    background-image: url("../img/lamp1.png");
     background-size: 100% 100%;
     padding: 200px 0;
 }
