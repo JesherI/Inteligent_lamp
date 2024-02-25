@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style-base.css' %}" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    {% block style %}
+
+    {% endblock %}
+    <title>Inteligent lamp</title>
+  </head>
+  <body>
+    <header>
+      <img src="{% static 'img/logo.png' %}" alt="Logo de la página" id="logo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#función">Función</a>
+          </li>
+          <li>
+            <a href="#clima">Clima</a>
+          </li>
+          <li>
+            <a href="#instalar">Instalar</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <div id="menu-icon">&#9776;</div>
+      </nav>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="{% static 'js/script-base.js' %}"></script>
+  </body>
+</html>
