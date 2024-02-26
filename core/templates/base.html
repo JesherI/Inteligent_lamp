@@ -17,28 +17,19 @@
   </head>
   <body>
     <header>
-      <img src="{% static 'img/logo.png' %}" alt="Logo de la página" id="logo" />
+      <a href="#inicio"><img src="{% static 'img/logo.png' %}" alt="Logo de la página" id="logo"></a>
       <nav>
-        <ul class="menu">
-          <li>
-            <a href="#inicio">Inicio</a>
-          </li>
-          <li>
-            <a href="#función">Función</a>
-          </li>
-          <li>
-            <a href="#clima">Clima</a>
-          </li>
-          <li>
-            <a href="#instalar">Instalar</a>
-          </li>
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
-        </ul>
-        <div id="menu-icon">&#9776;</div>
+          <ul class="menu">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#función">Función</a></li>
+              <li><a href="#clima">Clima</a></li>
+              <li><a href="#instalar">Instalar</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <div id="menu-icon">&#9776;</div>
       </nav>
-    </header>
+  </header>
+  
     {% block content %}
 
     {% endblock %}

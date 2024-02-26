@@ -1,26 +1,79 @@
 @media screen and (max-width: 600px) {
     .menu {
         display: none;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 999;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
     }
 
     .menu.active {
         display: block;
+        animation-name: slideMenuIn;
+    }
+
+    .menu.active.slideMenuOut { 
+        animation-name: slideMenuOut;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 8px 20px;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 1.0s;
+    }
+
+    .menu a:hover {
+        background-color: #f4f4f4;
     }
 
     #menu-icon {
         display: block;
-        position: fixed; 
-        top: 10px;
-        right: 10px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
         cursor: pointer;
-        z-index: 999; 
+        z-index: 1000;
+        font-size: 30px;
+        color: #333;
     }
-    header{
+
+    header {
         position: fixed;
     }
+
+    @keyframes slideMenuIn {
+        from {
+            right: -100%;
+        }
+
+        to {
+            right: 0;
+        }
+    }
+
+    @keyframes slideMenuOut {
+        from {
+            right: 0;
+        }
+
+        to {
+            right: -100%;
+        }
+    }
 }
-
-
 
 @media screen and (min-width: 601px) {
     #menu-icon {
