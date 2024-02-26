@@ -1,0 +1,71 @@
+.clima {
+    background-image: url('../img/clima.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.izquierda {
+    width: 50%;
+    flex: 1;
+    color: #6b460f86;
+}
+
+.derecha {
+    width: 50%;
+    flex: 1;
+    color: #6b460f86;
+}
+
+.proximos-dias {
+    display: flex;
+    justify-content: space-between;
+    color: #6b460f86;
+    margin-top: 20px;
+}
+
+.proximos-dias div {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 8px;
+    margin: 0 5px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna */
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%;
+        /* Ocupa todo el ancho del contenedor */
+    }
+
+    .proximos-dias {
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna */
+    }
+
+    
+
+    #dia1,
+    #dia2 {
+        margin-bottom: 10px;
+        /* Espaciado entre los grupos */
+    }
+
+    /* Segundo grupo de días */
+    #dia3,
+    #dia4 {
+        margin-top: 10px;
+        /* Espaciado entre los grupos */
+    }
+}

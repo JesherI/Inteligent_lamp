@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="{% static 'css/style-inicio.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style-instalar.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style-funciones.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style-clima.css' %}" />
     <link rel="stylesheet" href="{% static 'css/responcividad.css' %}" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/script-responsividad.js' %}"></script>
+    <script src="{% static 'js/script-base.js' %}"></script>
+    <script src="{% static 'js/script-clima.js' %}"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     {% block style %}
 
@@ -17,24 +22,31 @@
   </head>
   <body>
     <header>
-      <a href="#inicio"><img src="{% static 'img/logo.png' %}" alt="Logo de la página" id="logo"></a>
+      <a href="#inicio"><img src="{% static 'img/logo.png' %}" alt="Logo de la página" id="logo" /></a>
       <nav>
-          <ul class="menu">
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#función">Función</a></li>
-              <li><a href="#clima">Clima</a></li>
-              <li><a href="#instalar">Instalar</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-          </ul>
-          <div id="menu-icon">&#9776;</div>
+        <ul class="menu">
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#función">Función</a>
+          </li>
+          <li>
+            <a href="#clima">Clima</a>
+          </li>
+          <li>
+            <a href="#instalar">Instalar</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        <div id="menu-icon">&#9776;</div>
       </nav>
-  </header>
-  
+    </header>
+
     {% block content %}
 
     {% endblock %}
-
-    <script src="{% static 'js/script-responsividad.js' %}"></script>
-    <script src="{% static 'js/script-base.js' %}"></script>
   </body>
 </html>

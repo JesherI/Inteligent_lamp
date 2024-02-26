@@ -6,6 +6,6 @@ document.getElementById("menu-icon").addEventListener("click", function() {
         menu.classList.add("slideMenuOut");
         setTimeout(function() {
             menu.classList.remove("slideMenuOut");
-        }, 500); // Asegurarse de eliminar la clase después de que termine la animación
+        }, 500);
     }
 });

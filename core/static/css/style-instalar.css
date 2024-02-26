@@ -43,39 +43,39 @@
 
 #instalar p {
     font-size: 50px; 
-    color: #6b460f86; /* Color del texto */
+    color: #6b460f86; 
     position: absolute;
     height: 200px;
-    bottom: 10px; /* Ajusta la posición desde la parte inferior */
+    bottom: 10px;
     left: 5%;
 }
 
 #instalar h2 {
     font-family: 'Cormorant Garamond', serif; 
-    font-size: 45px; /* Tamaño de fuente para h2 */
-    color: #6b460f86; /* Color del texto */
+    font-size: 45px; 
+    color: #6b460f86; 
     position: absolute;
     height: 20px;
-    left: 50%; /* Ajusta la posición desde el lado izquierdo */
+    left: 50%; 
     font-weight: normal; 
 }
 
 #instalar h3 {
     font-family: 'Cormorant Garamond', serif; 
-    font-size: 50px; /* Tamaño de fuente para h2 */
-    color: #6b460f86; /* Color del texto */
+    font-size: 50px;
+    color: #6b460f86; 
     position: absolute;
     height: 30px;
-    left: 51%; /* Ajusta la posición desde el lado izquierdo */
+    left: 51%; 
     font-weight: normal; 
-    bottom: 125px; /* Ajusta la posición desde la parte inferior */
+    bottom: 125px;
 }
 .img-qr img {
-    width: 350px; /* Ancho de la imagen */
-    height: 350px; /* Alto de la imagen */
+    width: 350px; 
+    height: 350px; 
     position: absolute;
-    bottom: 230px; /* Ajusta la posición desde la parte inferior */
-    left: 750px; /* Ajusta la posición desde el lado izquierdo */
-    z-index: 2; /* Ajusta el orden de apilamiento */
+    bottom: 230px; 
+    left: 750px; 
+    z-index: 2; 
 }
 
