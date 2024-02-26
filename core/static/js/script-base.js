@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     intelligentLamp.addEventListener('mouseover', function () {
         intelligentLamp.style.color = '#EDD4D2'; 
-        intelligentLamp.style.transform = 'translateY(-3px)'; 
+        intelligentLamp.style.transform = 'translateY(-3px)'; /* Agrega un ligero desplazamiento hacia arriba */
     });
 
     intelligentLamp.addEventListener('mouseout', function () {
         intelligentLamp.style.color = '#fff'; 
-        intelligentLamp.style.transform = 'translateY(0)';
+        intelligentLamp.style.transform = 'translateY(0)'; /* Restaura el desplazamiento original */
     });
 });

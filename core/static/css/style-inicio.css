@@ -1,0 +1,77 @@
+#inicio .titles {
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#inicio .titles:hover {
+    color: #ead6c9;
+    transform: translateY(-3px);
+}
+
+#inicio {
+    margin-top: 80px;
+    text-align: center;
+    background-image: url("../img/lamp1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 200px 0;
+}
+
+
+#inicio h2 {
+    font-size: 50px;
+    color: #8B4513;
+    display: inline-block;
+}
+
+#inicio .titles {
+    display: inline-block;
+}
+
+#inicio .intelligent,
+#inicio .lamp {
+    font-family: 'The Seasons Light', 'Cormorant', serif;
+    font-size: 70px;
+    display: block;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+#inicio .intelligent.animate,
+#inicio .lamp.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#contacto {
+    background-color: #ead6c9;
+    color: #333;
+    padding: 20px;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto-info {
+    text-align: center;
+}
+
+.contacto-info img {
+    width: 50px;
+}
+
+.contacto-info h3 {
+    font-family: 'The Seasons Light', 'Cormorant', serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#contacto h2 {
+    text-align: center;
+}
