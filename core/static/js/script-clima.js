@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         nextDaysForecast.forEach((item, index) => {
-            const temperature = (item.main.temp - 273.15).toFixed(2);
+            const temperature = (item.main.temp - 269.15).toFixed(2);
             document.querySelector(`#dia${index + 1} h2`).textContent = `${temperature}°C`;
         });
     }
