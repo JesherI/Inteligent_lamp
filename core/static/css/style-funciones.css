@@ -2,21 +2,23 @@
     color: #8b5522;
     position: relative;
     overflow: hidden;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .funcion-content {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
 }
+
 .funcion-left p {
-    font-family: 'The Seasons Light', 'Cormorant', serif; 
-    font-size: 20px; 
-    color: #72490b; 
-    margin-top: 10px; 
+    font-family: 'The Seasons Light', 'Cormorant', serif;
+    font-size: 20px;
+    color: #72490b;
+    margin-top: 10px;
 }
+
 .funcion-left,
 .funcion-right {
     flex: 10;
@@ -39,7 +41,7 @@
 }
 
 #función > * {
-    position: relative; 
+    position: relative;
     z-index: 20;
 }
 
@@ -50,26 +52,40 @@
 }
 
 .icon-container img {
-    width: 50px; 
+    width: 50px;
     margin-right: 20px;
     transition: transform 0.4s ease-in-out;
 }
 
 .icon-container img:hover {
-    transform: scale(2.5); 
+    transform: scale(2.5);
 }
 
 .icon-container p {
-    font-family: 'Cormorant Garamond', serif; 
-    margin-left: 10px; 
+    font-family: 'Cormorant Garamond', serif;
+    margin-left: 10px;
     font-size: 20px;
-    color: #492208; 
+    color: #492208;
 }
 
-
 #función h2 {
-    font-family: 'The Seasons Light', 'Cormorant', serif; 
-    font-size: 28px; 
-    font-weight: bold; 
-    color: #6b460f; 
+    font-family: 'The Seasons Light', 'Cormorant', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #6b460f;
+}
+
+@media screen and (max-width: 768px) {
+    .funcion-content {
+        display: flex;
+        flex-direction: column; /* Cambia a dirección de columna para apilar los elementos */
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding: 20px;
+    }
+    
+    .funcion-left,
+    .funcion-right {
+        flex: 1; /* Ambas partes ocupan el mismo espacio */
+        max-width: 100%; /* Asegura que ambas partes no excedan el 100% del ancho */
+    }
 }

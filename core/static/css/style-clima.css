@@ -12,12 +12,14 @@
 }
 
 .izquierda {
+    font-family: 'The Seasons Light', 'Cormorant', serif;
     width: 50%;
     flex: 1;
     color: #6b460f86;
 }
 
 .derecha {
+    font-family: 'The Seasons Light', 'Cormorant', serif;
     width: 50%;
     flex: 1;
     color: #6b460f86;
@@ -31,41 +33,58 @@
 }
 
 .proximos-dias div {
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 5px 8px;
+    padding: 10px 30px;
     margin: 0 5px;
 }
 
-/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 1150px) {
+    .proximos-dias div {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+
+    #dia4 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .proximos-dias div {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+
     .contenedor {
         flex-direction: column;
-        /* Cambia la dirección del flexbox a columna */
     }
 
     .izquierda,
     .derecha {
         width: 100%;
-        /* Ocupa todo el ancho del contenedor */
     }
 
     .proximos-dias {
         flex-direction: column;
-        /* Cambia la dirección del flexbox a columna */
     }
 
-    
-
-    #dia1,
-    #dia2 {
+    #dia0,
+    #dia1 {
         margin-bottom: 10px;
-        /* Espaciado entre los grupos */
     }
 
-    /* Segundo grupo de días */
-    #dia3,
+    #dia2,
+    #dia3 {
+        margin-bottom: 10px;
+    }
+
     #dia4 {
+        display: block;
         margin-top: 10px;
-        /* Espaciado entre los grupos */
     }
 }
