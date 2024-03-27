@@ -45,9 +45,6 @@
   </section>
 
   <section id="clima" class="clima">
-    <br />
-    <br />
-    <br />
     <div class="contenedor">
       <div class="izquierda">
         <h1>CLIMA</h1>
@@ -83,24 +80,26 @@
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
   </section>
 
-  <section id="instalar">
-    <div>
-      <p>
-        <br />Paso 1
-      </p>
+  <section id="instalar" class="instalar">
+    <div class="arriba">
+      <div class="izquierda"></div>
+      <div class="derecha">
+        <h1>Instalación</h1>
+        <h2>Escanea el código QR con la cámara de tu teléfono para abrir</h2>
+        <img src="{% static 'img/qr-code-scan.png' %}" alt="Instalación" />
+      </div>
     </div>
-    <div>
-    </div>
-    <div>
-      <h3>Paso 2</h3>
-    </div>
-    <div class="img-qr">
-      <img src="{% static 'img/qr-code-scan.png' %}" alt="Icono qr" />
+    <div class="abajo">
+      <div class="izquierda">
+        <h1>Paso 1</h1>
+        <h2> <img src="{% static "img/descargar.gif"%}" >Descarga nuestra App</h2>
+      </div>
+      <div class="derecha">
+        <h1 class="prueba">Paso 2</h1>
+        <h2> <img src="{% static "img/registro.gif" %}"> Crea tu cuenta</h2>
+      </div>
     </div>
   </section>
 
@@ -110,7 +109,7 @@
       <div class="contacto-info">
         <img src="{% static 'img/locacion.gif' %}" alt="Icono de Locación" />
         <h3>Locación</h3>
-        <p>1234 Calle Principal, Ciudad</p> <!-- Cambia la información según tus necesidades -->
+        <p>1234 Calle Principal, Ciudad</p> 
       </div>
       <div class="contacto-info">
         <img src="{% static 'img/email.gif' %}" alt="Icono de Email" />
