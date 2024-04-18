@@ -7,6 +7,7 @@
 .instalar .arriba,
 .instalar .abajo {
     display: flex;
+    
 }
 
 .instalar .abajo{
@@ -16,6 +17,12 @@
 .instalar .abajo h2,
 .instalar .abajo h1{
     color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+
+
 }
 
 .instalar .arriba .izquierda,
@@ -25,6 +32,10 @@
     width: 50%;
     box-sizing: border-box;
     text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
 

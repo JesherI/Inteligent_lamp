@@ -13,14 +13,20 @@
 }
 
 .izquierda {
-    font-family: 'The Seasons Light', 'Cormorant', serif;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
     width: 50%;
     flex: 1;
     color: #8b5522;
 }
 
 .derecha {
-    font-family: 'The Seasons Light', 'Cormorant', serif;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
     width: 50%;
     flex: 1;
     color: #8b5522;
